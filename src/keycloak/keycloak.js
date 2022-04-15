@@ -21,7 +21,7 @@ export function configureKeycloak(keycloakUrl, realm, clientId) {
   }
   if (!keycloak) {
     keycloak = new Keycloak({
-      url: `${keycloakUrl}/auth/`,
+      url: `${keycloakUrl}/`,
       realm: realm,
       clientId: clientId,
     });
