@@ -1,10 +1,10 @@
-# react-router-keycloak
+# @tomxpcvx/react-router-keycloak - [![npm](https://img.shields.io/npm/v/@tomxpcvx/react-router-keycloak.svg?color=%2345bf17&style=popout)](https://www.npmjs.com/package/@tomxpcvx/react-router-keycloak)
 
 React components to integrate the Identity Service Component based on KeyCloak.
 
 ## Installation
 
-`npm install --save react-router-keycloak`
+`npm install --save @tomxpcvx/react-router-keycloak`
 
 ## Usage
 
@@ -44,7 +44,7 @@ The module consists of:
 ```jsx harmony
 import React from 'react';
 import Router, { Route } from 'react-router';
-import KeycloakProvider, { configureKeycloak, PrivateRoute, Login, Logout } from 'react-router-keycloak';
+import KeycloakProvider, { configureKeycloak, PrivateRoute, Login, Logout } from '@tomxpcvx/react-router-keycloak';
 
 const KEYCLOAK_URL = 'The `url` to your keycloak server';
 const KEYCLOAK_REALM = 'The keycloak `realm` to use';
@@ -61,8 +61,8 @@ export default () => (
   <KeycloakProvider loginPath="/login" logoutPath="/logout" onRefresh={handleRefresh}>
     <Router>
       <Route exact path="/" render={() => <div>A public home page</div>} />
-      <Route path="/login" render={props => <Login redirectTo="/private" {...props} />} />
-      <Route path="/log-out" render={props => <Logout redirectTo="/" {...props} />} />
+      <Route path="/login" render={(props) => <Login redirectTo="/private" {...props} />} />
+      <Route path="/log-out" render={(props) => <Logout redirectTo="/" {...props} />} />
       <PrivateRoute path="/private" component={() => <div>A private page</div>} />
     </Router>
   </KeycloakProvider>
