@@ -1,10 +1,10 @@
-# @tomxpcvx/react-router-keycloak - [![npm](https://img.shields.io/npm/v/@tomxpcvx/react-router-keycloak.svg?color=%2345bf17&style=popout)](https://www.npmjs.com/package/@tomxpcvx/react-router-keycloak)
+# @temmiland/react-router-keycloak - [![npm](https://img.shields.io/npm/v/@temmiland/react-router-keycloak.svg?color=%2345bf17&style=popout)](https://www.npmjs.com/package/@temmiland/react-router-keycloak)
 
 React components to integrate the Identity Service Component based on KeyCloak.
 
 ## Installation
 
-`npm install --save @tomxpcvx/react-router-keycloak`
+`npm install --save @temmiland/react-router-keycloak`
 
 ## Usage
 
@@ -44,7 +44,7 @@ The module consists of:
 ```jsx harmony
 import React from 'react';
 import Router, { Route } from 'react-router';
-import KeycloakProvider, { configureKeycloak, PrivateRoute, Login, Logout } from '@tomxpcvx/react-router-keycloak';
+import KeycloakProvider, { configureKeycloak, PrivateRoute, Login, Logout } from '@temmiland/react-router-keycloak';
 
 const KEYCLOAK_URL = 'The `url` to your keycloak server';
 const KEYCLOAK_REALM = 'The keycloak `realm` to use';

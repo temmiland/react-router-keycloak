@@ -1,14 +1,14 @@
 {
-  "name": "@tomxpcvx/react-router-keycloak",
-  "version": "1.3.4",
+  "name": "@temmiland/react-router-keycloak",
+  "version": "1.3.5",
   "description": "Integrate the Identity Server Component inside a react app",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomxpcvx/react-router-keycloak"
+    "url": "https://github.com/temmiland/react-router-keycloak"
   },
   "license": "MIT",
-  "author": "The Glue, tomxpcvx <hello@tomxpcvx.dev>",
+  "author": "The Glue; Temmi Pietsch <welcome@temmi.land>",
   "dependencies": {
     "keycloak-js": "^9.0.2",
     "prop-types": "^15.8.1",
